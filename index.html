@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPM Descomplicado — Guia do Sistema Atende.net para Iniciantes</title>
+<meta name="description" content="Guia simples do sistema Atende.net (IPM Sistemas): o que é, como é organizado, conceitos essenciais e busca de rotinas.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="container topo-interno">
+    <span class="logo">IPM <strong>Descomplicado</strong></span>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#conceitos">Conceitos</a>
+      <a href="#modulos">Conjuntos</a>
+      <a href="#busca">Buscar rotina</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" class="hero">
+  <div class="container">
+    <h1>O sistema IPM explicado<br>para quem está começando do zero</h1>
+    <p class="lead">
+      Um guia em linguagem simples do <strong>Atende.net</strong>, o sistema da
+      <strong>IPM Sistemas</strong> usado por prefeituras e órgãos públicos para gerenciar
+      folha de pagamento, tributos, atendimento ao cidadão e muito mais.
+    </p>
+    <div class="stats">
+      <div class="stat"><span id="stat-rotinas">—</span><small>rotinas documentadas</small></div>
+      <div class="stat"><span id="stat-modulos">—</span><small>conjuntos de rotinas</small></div>
+      <div class="stat"><span id="stat-conceitos">—</span><small>conceitos explicados</small></div>
+    </div>
+    <a class="botao" href="#como-funciona">Começar pelo básico ↓</a>
+  </div>
+</section>
+
+<!-- ============ O QUE É ============ -->
+<section class="secao">
+  <div class="container">
+    <h2>O que é esse sistema?</h2>
+    <div class="duas-colunas">
+      <div>
+        <p>
+          O <strong>Atende.net</strong> é um sistema de gestão pública (um ERP) desenvolvido pela
+          <strong>IPM Sistemas</strong>. Ele roda no navegador — não é preciso instalar nada no
+          computador — e concentra em um só lugar a rotina de uma prefeitura ou entidade pública.
+        </p>
+        <p>
+          Tudo o que o sistema faz está organizado em <strong>rotinas</strong> (as telas do sistema):
+          cadastrar um funcionário, emitir um relatório de salários, inscrever um débito em dívida
+          ativa, responder uma manifestação da ouvidoria… cada tarefa dessas é uma rotina.
+        </p>
+        <p>
+          Este guia foi montado a partir da documentação oficial do sistema, resumindo o essencial
+          para você entender a lógica dele antes de sair clicando.
+        </p>
+      </div>
+      <div class="card destaque">
+        <h3>A ideia central</h3>
+        <p>
+          Pense no sistema como um <strong>prédio de repartições</strong>: cada andar é um
+          <em>conjunto</em> (Recursos Humanos, Arrecadação…), cada sala do andar é um
+          <em>módulo</em> (Folha de Pagamento, IPTU…) e cada coisa que você faz dentro da sala é uma
+          <em>rotina</em> (cadastrar, consultar, emitir relatório).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section id="como-funciona" class="secao cinza">
+  <div class="container">
+    <h2>Como o sistema é organizado</h2>
+
+    <h3 class="subtitulo">1. A hierarquia: conjunto → módulo → rotina</h3>
+    <div class="grade tres">
+      <div class="card">
+        <h4>Conjunto</h4>
+        <p>A grande área da administração. Exemplos: <em>Recursos Humanos</em>, <em>Arrecadação</em>,
+        <em>Governo Digital</em>, <em>Contabilidade</em>. É o primeiro nível do menu.</p>
+      </div>
+      <div class="card">
+        <h4>Módulo</h4>
+        <p>O agrupamento das rotinas de um mesmo assunto dentro do conjunto. Exemplo: dentro de
+        <em>Recursos Humanos</em> existem os módulos <em>Folha de Pagamento</em> e
+        <em>Ponto Eletrônico</em>.</p>
+      </div>
+      <div class="card">
+        <h4>Rotina</h4>
+        <p>A tela onde o trabalho acontece. Cada rotina reúne um conjunto de <strong>ações</strong>
+        (incluir, alterar, consultar, emitir…). Exemplo: <em>Cadastro de Funcionários</em>.</p>
+      </div>
+    </div>
+
+    <h3 class="subtitulo">2. Como ler um caminho de menu</h3>
+    <p>
+      Na documentação, toda rotina indica onde ela mora no menu. O símbolo
+      <code>&gt;&gt;</code> separa os níveis. Exemplo real:
+    </p>
+    <div class="caminho">
+      Recursos Humanos <code>&gt;&gt;</code> Folha de Pagamento <code>&gt;&gt;</code>
+      Relatórios <code>&gt;&gt;</code> Mensais <code>&gt;&gt;</code> Salários Líquidos
+    </div>
+    <p class="nota">
+      Leia assim: abra o menu <strong>Recursos Humanos</strong>, entre no módulo
+      <strong>Folha de Pagamento</strong>, depois em <strong>Relatórios</strong>,
+      <strong>Mensais</strong>, e clique na rotina <strong>Salários Líquidos</strong>.
+      Se você não enxerga algum menu, provavelmente é questão de <strong>permissão de acesso</strong>
+      do seu usuário — fale com o administrador do sistema na sua entidade.
+    </p>
+
+    <h3 class="subtitulo">3. O nome da rotina já diz o que ela faz</h3>
+    <div class="grade tres">
+      <div class="card"><h4>Cadastro de…</h4><p>Tela para incluir e manter informações básicas que serão usadas em outras rotinas. Ex.: Cadastro de Cargos.</p></div>
+      <div class="card"><h4>Consulta de…</h4><p>Tela só de leitura, para pesquisar e visualizar informações sem alterá-las. Ex.: Consulta de Ficha Financeira.</p></div>
+      <div class="card"><h4>Relatório…</h4><p>Tela para emitir um documento (PDF/planilha) com filtros. Ex.: Relatório Salários Líquidos.</p></div>
+      <div class="card"><h4>Gerenciamento de…</h4><p>Tela de operação do dia a dia, onde processos andam (abrir, tramitar, encerrar). Ex.: Gerenciamento da Agenda.</p></div>
+      <div class="card"><h4>Configurações / Parâmetros</h4><p>Telas que definem o comportamento do sistema. Normalmente usadas uma vez só, na implantação, por usuários avançados.</p></div>
+      <div class="card"><h4>Manutenção / Importação</h4><p>Rotinas de ajuste em lote ou de trazer dados de fora (ex.: importar arquivo do relógio ponto).</p></div>
+    </div>
+
+    <h3 class="subtitulo">4. Os campos que você vai ver em toda tela</h3>
+    <p>
+      A maioria das telas é composta de <strong>etapas</strong> (abas) e <strong>filtros/campos</strong>.
+      A documentação usa estes termos para os tipos de campo:
+    </p>
+    <div class="tabela-wrapper">
+      <table>
+        <thead><tr><th>Termo na tela</th><th>O que significa</th></tr></thead>
+        <tbody>
+          <tr><td><strong>suggest</strong></td><td>Campo com busca: você digita parte do nome/código e o sistema sugere as opções. Ex.: digitar o nome do funcionário.</td></tr>
+          <tr><td><strong>seleção múltipla</strong></td><td>Campo onde dá para marcar várias opções ao mesmo tempo. Ex.: marcar "Férias" e "Rescisão" no tipo de folha.</td></tr>
+          <tr><td><strong>lista</strong></td><td>Campo de escolha única dentro de uma lista fixa de opções.</td></tr>
+          <tr><td><strong>calendário</strong></td><td>Campo de data, preenchido clicando em um mini-calendário.</td></tr>
+          <tr><td><strong>etapa / aba</strong></td><td>Divisão da tela em partes. Preencher uma etapa pode liberar (ou esconder) outras.</td></tr>
+          <tr><td><strong>tipo quebra</strong></td><td>Em relatórios, define como os dados serão agrupados. Ex.: quebrar por <em>Centro de Custo</em> mostra os totais separados por setor.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card dica">
+      <h4>Dica de ouro</h4>
+      <p>
+        Muitos campos se comportam de forma "inteligente": preencher um pode habilitar ou remover
+        outros. Exemplo real da documentação: no relatório de salários, escolher <em>"Férias"</em>
+        no tipo de folha habilita um campo de período de férias que antes nem aparecia na tela.
+        Se um campo sumiu ou apareceu, não é defeito — é o sistema reagindo ao que você preencheu.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEITOS ============ -->
+<section id="conceitos" class="secao">
+  <div class="container">
+    <h2>Conceitos essenciais</h2>
+    <p class="nota">O "vocabulário" que aparece o tempo todo nas telas, explicado em uma frase cada.</p>
+
+    <h3 class="subtitulo">Sistema e navegação</h3>
+    <div class="grade tres glossario">
+      <div class="card termo"><h4>Rotina</h4><p>Cada tela/funcionalidade do sistema. É a unidade básica: toda tarefa é feita dentro de uma rotina.</p></div>
+      <div class="card termo"><h4>Módulo</h4><p>Agrupamento de rotinas de um mesmo assunto dentro de um conjunto (ex.: módulo Folha de Pagamento, no conjunto Recursos Humanos).</p></div>
+      <div class="card termo"><h4>Cadastro Único</h4><p>O cadastro central de pessoas (físicas e jurídicas) da entidade, reaproveitado por todos os conjuntos — cadastra uma vez, usa em todo lugar.</p></div>
+      <div class="card termo"><h4>Perfil e permissões</h4><p>Conjunto de acessos que um usuário (ou grupo) tem no sistema. Define quais menus e rotinas aparecem para você.</p></div>
+      <div class="card termo"><h4>Log</h4><p>Registro automático de eventos do sistema: quem acessou, o que foi alterado, quando. Serve para auditoria.</p></div>
+      <div class="card termo"><h4>Notificações</h4><p>Avisos emitidos pelo sistema (por e-mail ou em janela pop-up) sobre acontecimentos que interessam ao usuário.</p></div>
+      <div class="card termo"><h4>Portal do Cidadão / Autoatendimento</h4><p>Site público onde o cidadão usa serviços da prefeitura pela internet — segunda via de carnê, inscrição em concurso, reserva de espaço público — sem precisar ir ao órgão.</p></div>
+      <div class="card termo"><h4>Ouvidoria</h4><p>Canal de manifestações do cidadão (reclamações, sugestões, denúncias), gerenciado como processos dentro do sistema.</p></div>
+      <div class="card termo"><h4>Indicadores</h4><p>Painéis com gráficos e números da gestão, exibidos no menu inicial do sistema.</p></div>
+    </div>
+
+    <h3 class="subtitulo">Recursos Humanos e Folha de Pagamento</h3>
+    <div class="grade tres glossario">
+      <div class="card termo destaque-termo"><h4>Centro de Custo</h4><p>Uma subdivisão hierárquica da entidade baseada nos seus órgãos e setores. Serve para agrupar funcionários e despesas por "onde o gasto acontece" — ex.: emitir o relatório de salários separado por secretaria usando a quebra por centro de custo.</p></div>
+      <div class="card termo"><h4>Local de Trabalho</h4><p>O departamento ou repartição onde o funcionário está lotado para prestar serviço.</p></div>
+      <div class="card termo"><h4>Contrato</h4><p>O registro trabalhista entre o órgão público e o funcionário, juntando lotação, cargo, pagamento e dados pessoais.</p></div>
+      <div class="card termo"><h4>Proventos e Descontos</h4><p>Proventos são valores pagos ao funcionário (salário base, hora extra, adicional noturno); descontos são valores retidos (INSS, adiantamentos, vale-transporte).</p></div>
+      <div class="card termo"><h4>Período da Folha</h4><p>Define o dia de início e fechamento de cada folha de pagamento — é a "competência" (mês/ano) usada nos cálculos e relatórios.</p></div>
+      <div class="card termo"><h4>Provisão</h4><p>Cálculo prévio dos valores de 13º salário, férias e licença prêmio que serão pagos aos funcionários no futuro.</p></div>
+      <div class="card termo"><h4>Espelho de Ponto</h4><p>Documento com todos os registros de entrada e saída do funcionário em um período — a base para apurar faltas, atrasos e horas extras.</p></div>
+      <div class="card termo"><h4>Banco de Horas</h4><p>Flexibilização da jornada: horas trabalhadas além do previsto viram uma "reserva" que o funcionário compensa depois, em vez de receber como hora extra.</p></div>
+      <div class="card termo"><h4>Licença Prêmio</h4><p>Licença remunerada a que o funcionário tem direito após determinado tempo de serviço, conforme a legislação municipal.</p></div>
+      <div class="card termo"><h4>Função Gratificada</h4><p>Acréscimo salarial pago a quem assume atribuições de direção, chefia ou assessoramento.</p></div>
+      <div class="card termo"><h4>Cargo Comissionado</h4><p>Cargo de livre nomeação e exoneração, que pode ser ocupado por pessoa sem vínculo efetivo com a entidade.</p></div>
+      <div class="card termo"><h4>DSR</h4><p>Descanso Semanal Remunerado: direito a 24h consecutivas de descanso por semana — e desconto correspondente em caso de falta não justificada.</p></div>
+    </div>
+
+    <h3 class="subtitulo">Arrecadação, Fiscal e Contabilidade</h3>
+    <div class="grade tres glossario">
+      <div class="card termo"><h4>IPTU, ISSQN e ITBI</h4><p>Os principais impostos municipais gerenciados no sistema: IPTU (imóveis urbanos), ISSQN (prestação de serviços) e ITBI (transferência de imóveis). Cada um tem seu módulo na Arrecadação.</p></div>
+      <div class="card termo"><h4>Dívida Ativa</h4><p>Onde são inscritos os débitos não pagos após a cobrança normal. A <strong>CDA</strong> (Certidão de Dívida Ativa) é o documento que formaliza essa inscrição e permite a cobrança judicial.</p></div>
+      <div class="card termo"><h4>Certidão Negativa ("Nada Consta")</h4><p>Documento que comprova a existência — ou não — de débitos/ações contra uma pessoa ou empresa perante a entidade.</p></div>
+      <div class="card termo"><h4>Carnê e Convênio Bancário</h4><p>Carnê é a guia de pagamento emitida para o contribuinte; o convênio bancário é o contrato com o banco que permite receber esses valores.</p></div>
+      <div class="card termo"><h4>Empenho</h4><p>Termo da área contábil: é a reserva de parte do orçamento para garantir o pagamento de uma despesa (ex.: empenhar o pagamento de diárias de viagem).</p></div>
+      <div class="card termo"><h4>Nota Fiscal Eletrônica (NF-e)</h4><p>Documento fiscal eletrônico emitido e gerenciado pelo módulo fiscal, personalizável por prestador de serviço.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÓDULOS ============ -->
+<section id="modulos" class="secao cinza">
+  <div class="container">
+    <h2>Os conjuntos do sistema</h2>
+    <p class="nota">
+      O Atende.net é dividido em grandes áreas. Abaixo, o que cada uma faz e seus módulos
+      principais — com o número de rotinas documentadas em cada conjunto.
+    </p>
+    <div id="grade-modulos" class="grade tres"></div>
+  </div>
+</section>
+
+<!-- ============ BUSCA ============ -->
+<section id="busca" class="secao">
+  <div class="container">
+    <h2>Encontre uma rotina</h2>
+    <p class="nota">
+      Busque em toda a documentação usada para montar este guia. Digite o que você quer fazer
+      (ex.: <em>férias</em>, <em>IPTU</em>, <em>ponto</em>, <em>certidão</em>) e veja em qual
+      menu a rotina está.
+    </p>
+    <div class="busca-barra">
+      <input type="search" id="campo-busca" placeholder="Digite o que você procura…" autocomplete="off">
+      <select id="filtro-modulo">
+        <option value="">Todos os conjuntos</option>
+      </select>
+    </div>
+    <p id="contador" class="contador"></p>
+    <ul id="resultados" class="resultados"></ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>
+      Guia de estudo montado a partir da documentação do sistema <strong>Atende.net</strong>
+      (IPM Sistemas). Conteúdo resumido e adaptado para fins de aprendizado — em caso de dúvida
+      operacional, consulte a documentação oficial ou o suporte da sua entidade.
+    </p>
+  </div>
+</footer>
+
+<script src="dados.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
